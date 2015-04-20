@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com fontastic.s3.amazonaws.com",
+      'img-src': "'self' static-cdn.jtvnw.net",
+      'script-src': "'self' api.twitch.tv",
+      'style-src': "'self' fontastic.s3.amazonaws.com fonts.googleapis.com"
+    },
     modulePrefix: 'twitchwatcher',
     environment: environment,
     baseURL: '/',

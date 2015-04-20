@@ -6,4 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+    this.resource('streams', function() {
+      this.resource('stream', {path : '/:streamer'});
+    });
 });

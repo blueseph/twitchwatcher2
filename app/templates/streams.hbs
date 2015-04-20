@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="three columns">
+    {{#each stream in model.streams}}
+      {{#link-to 'stream' stream.channel.name}}
+        <div class="stream">
+          <div class="stream_img">
+              <img src={{stream.preview.medium}}>
+          </div>
+
+          <div class="copy">
+            <div class="streamer">{{stream.channel.display_name}}</div>
+            <div class="game">{{stream.game}}</div>
+            <div class="viewers"><i class="icon-user-outline"></i> {{stream.viewers}}</div>
+          </div>
+        </div>
+      {{/link-to}}
+    {{/each}}
+  </div>
+
+  <div class="nine columns" id="streamContainer">
+    {{outlet}}
+  </div>
+</div>
