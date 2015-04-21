@@ -190,10 +190,14 @@ nav {
   bottom: 13px;
 }
 
-#streamContainer {
+.streamContainer {
   overflow: auto;
+  height: 100vh;
 }
 
+.streamContainer > div {
+  height: 100%;
+}
 
 
 

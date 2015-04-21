@@ -6,7 +6,9 @@ module.exports = function(environment) {
       'font-src': "'self' fonts.gstatic.com fontastic.s3.amazonaws.com",
       'img-src': "'self' static-cdn.jtvnw.net",
       'script-src': "'self' api.twitch.tv",
-      'style-src': "'self' fontastic.s3.amazonaws.com fonts.googleapis.com"
+      'style-src': "'self' fontastic.s3.amazonaws.com fonts.googleapis.com",
+      'default-src': "'self' http://www-cdn.jtvnw.net/",
+      'connect-src': "'self' http://www-cdn.jtvnw.net/"
     },
     modulePrefix: 'twitchwatcher',
     environment: environment,
